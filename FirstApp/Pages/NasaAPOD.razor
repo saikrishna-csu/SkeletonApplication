@@ -1,0 +1,41 @@
+@using FirstApp.Models;
+@page "/nasa-apod"
+
+@using FirstApp.Clients;
+@inject NasaClient NasaClient;
+@using FirstApp.Shared.Components;
+<PageTitle>Nasa API Page</PageTitle>
+
+
+<!-- <input placeholder="enter our tasks" @bind="newTodo"/>
+<button @onclick="Add">Add Task</button> -->
+
+
+<Header title="@nasaResponse.title" subTitle="@nasaResponse.date" description="@nasaResponse.explanation"/>
+<br />
+<NasaImageSection copyright="@nasaResponse.copyright" imgUrl="@nasaResponse.url" hdUrl="@nasaResponse.hdurl"/>
+
+<input placeholder="enter the date" @bind="cDate"/>
+<button @onclick="getDate">Submit</button>
+
+@code {
+
+
+    private NasaResponse? nasaResponse = null;
+   
+    public string? cDate;
+    
+    async Task getDate(){
+        
+         nasaResponse = await NasaClient.getNasa(cDate);
+         
+    }
+    
+    protected override async Task OnInitializedAsync(){
+
+        nasaResponse = await NasaClient.getNasa(null);
+
+    }
+
+
+}

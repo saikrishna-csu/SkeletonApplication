@@ -1,0 +1,16 @@
+
+
+<img src="@imgUrl" alt="Nasa APOD Image"/>
+<p><a href="@hdUrl">hd url</a></p>
+<p>Copyright : @copyright</p>
+
+@code {
+    [Parameter]
+    public string imgUrl {get; set;}
+
+    [Parameter]
+    public string hdUrl {get; set;}
+
+    [Parameter]
+    public string copyright {get; set;}
+}

@@ -23,6 +23,7 @@
       "Microsoft.Extensions.FileProviders.Abstractions.dll": "sha256-Zt6OY6gg\/1Tzt9oFOQBkezPvUVkFK4dyM6Pfk+MTUvg=",
       "Microsoft.Extensions.FileProviders.Physical.dll": "sha256-9xkIbIienaRj9Td2MyWYzL9JmVx6CKbGCPrvJ1Pxfn8=",
       "Microsoft.Extensions.FileSystemGlobbing.dll": "sha256-Gm0yiS5fySh2nZXdCRKZIbASK8sSukwjogLc+a9EBZY=",
+      "Microsoft.Extensions.Http.dll": "sha256-QqjUvBFxKOeh8XX3IrmuIesFycYZMmwrhsRakmXvrXE=",
       "Microsoft.Extensions.Logging.dll": "sha256-WMsuY8rhtg+vvssGFSR7ZLKhqYPAzOi538IXMoiJ6bI=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-7zoKnNaWqWOrjF2eX3dFetJL+I03xqvCzORtFB4Ws08=",
       "Microsoft.Extensions.Options.dll": "sha256-rYT8laJlOlF0qyGuqjSmgDWb3Mk5aO1P2d9ojmaAuL0=",
@@ -198,13 +199,13 @@
       "mscorlib.dll": "sha256-pO\/W4w\/X+UjVMUMaxE5tYTQ0tILP+hmMu0zi0MSVBLc=",
       "netstandard.dll": "sha256-kj5cBXzwPYC+HD+P8+6VybY34JtEzjXjMIHXEI3hIiM=",
       "System.Private.CoreLib.dll": "sha256-Awk1lCiFfH7r9AAZfBtGqS8rhv6UJ5lUu3yF6HDH3tQ=",
-      "FirstApp.dll": "sha256-FnEnl+2HQTf3SOb8njdqhQrz\/A78Uln9mBkXMw9x5vE="
+      "FirstApp.dll": "sha256-GNVoU9Fb1BvI87XGzrSxt7nz\/UduJlKoNGmCvAjaoTk="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "FirstApp.pdb": "sha256-iPI9KzHX\/QFtpJCCiOCrlOZ4DJsMtNFaYcYkCSpsc2s="
+      "FirstApp.pdb": "sha256-WZue3WArODj5P8KIsAP1o34zCFFyOP1vqDDEN8y+llI="
     },
     "runtime": {
       "dotnet.7.0.0.218ek1t196.js": "sha256-2jNLve8W0sST0LAebgAc1IwSnGhkbjOKO8QPWWiJssI=",

@@ -826,3 +826,7 @@
 /workspace/SkeletonApplication/FirstApp/obj/Debug/net7.0/refint/FirstApp.dll
 /workspace/SkeletonApplication/FirstApp/obj/Debug/net7.0/FirstApp.pdb
 /workspace/SkeletonApplication/FirstApp/obj/Debug/net7.0/ref/FirstApp.dll
+/workspace/SkeletonApplication/FirstApp/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Http.dll
+/workspace/SkeletonApplication/FirstApp/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Http.dll.gz
+/workspace/SkeletonApplication/FirstApp/bin/Debug/net7.0/Microsoft.Extensions.Http.dll
+/workspace/SkeletonApplication/FirstApp/obj/Debug/net7.0/build-gz/xV7dP+w3.gz
