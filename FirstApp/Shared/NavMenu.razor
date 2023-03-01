@@ -1,4 +1,5 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@inject CustomAuthenticationStateProvider _authenticationStateProvider
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">FirstApp</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
@@ -24,16 +25,23 @@
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
             </NavLink>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="todo">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="nasa-apod">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Nasa APOD
-            </NavLink>
-        </div>
+        <AuthorizeView Roles="admin">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="todo">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
+                </NavLink>
+            </div>
+        </AuthorizeView>
+        <AuthorizeView Roles="admin">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="nasa-apod">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Nasa APOD
+                </NavLink>
+            </div>
+        </AuthorizeView>
+        <AuthorizeView>
+            <button class="btn btn-primary" @onclick="onLogOut"> LogOut </button>
+        </AuthorizeView>
     </nav>
 </div>
 
@@ -45,5 +53,9 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void onLogOut(){
+        _authenticationStateProvider.SignOut();
     }
 }
